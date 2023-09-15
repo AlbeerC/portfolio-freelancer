@@ -1,0 +1,82 @@
+main {
+    text-align: center;
+    margin-top: 3rem;
+
+    h2 {
+        font-size: 3rem;
+    }
+
+    h3 {
+        padding-top: 1rem;
+    }
+
+    .hero {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: 0 1rem;
+
+        .social-icons {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 2rem;
+
+            i {
+                padding: 2rem;
+                border-radius: .5rem;
+                background-color: $yellow;
+                color: $black;
+                font-weight: bold;
+                cursor: pointer;
+
+                &:hover {
+                    background-color: $black;
+                    color: $yellow;
+                }
+            }
+        }
+
+        .illustration {
+            img {
+                height: 25rem;
+                width: auto;
+                float: right;
+                margin-top: 5rem;
+                filter: brightness(80%);
+            }
+        }
+    }
+
+    .about-me {
+        margin: 5rem 2rem 0 2rem;
+        text-align: center;
+
+        p {
+            line-height: 3rem;
+            margin-bottom: 2rem;
+            font-size: 1.7rem;
+        }
+
+        button {
+            background-color: $yellow;
+            color: $black;
+            text-align: center;
+            text-transform: uppercase;
+            font-family: $titleFont;
+            border: 1px solid $black;
+            border-radius: .3rem;
+            padding: 1rem 2rem;
+            font-weight: bold;
+            cursor: pointer;
+
+            &:hover {
+                background-color: $black;
+                color: $yellow;
+                border: 1px solid $yellow;
+            }
+        }
+    }
+}
+

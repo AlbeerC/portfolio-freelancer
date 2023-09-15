@@ -1,0 +1,89 @@
+@import url("https://fonts.googleapis.com/css2?family=Prompt:ital,wght@1,400;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@1,400;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Prompt:ital,wght@1,400;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@1,400;1,700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+html {
+  font-size: 62.5%; }
+
+body {
+  font-size: 16px;
+  background-color: #000000;
+  color: #ffffff; }
+
+h1, h2, h3 {
+  font-weight: bold;
+  font-family: "Prompt", sans-serif; }
+
+p {
+  font-family: "Atkinson Hyperlegible", sans-serif; }
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem;
+  color: #ffffff; }
+  header h1 {
+    font-size: 2.5rem; }
+
+main {
+  text-align: center;
+  margin-top: 3rem; }
+  main h2 {
+    font-size: 3rem; }
+  main h3 {
+    padding-top: 1rem; }
+  main .hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 1rem; }
+    main .hero .social-icons {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 2rem; }
+      main .hero .social-icons i {
+        padding: 2rem;
+        border-radius: .5rem;
+        background-color: #E7F991;
+        color: #000000;
+        font-weight: bold;
+        cursor: pointer; }
+        main .hero .social-icons i:hover {
+          background-color: #000000;
+          color: #E7F991; }
+    main .hero .illustration img {
+      height: 25rem;
+      width: auto;
+      float: right;
+      margin-top: 5rem;
+      filter: brightness(80%); }
+  main .about-me {
+    margin: 5rem 2rem 0 2rem;
+    text-align: center; }
+    main .about-me p {
+      line-height: 3rem;
+      margin-bottom: 2rem;
+      font-size: 1.7rem; }
+    main .about-me button {
+      background-color: #E7F991;
+      color: #000000;
+      text-align: center;
+      text-transform: uppercase;
+      font-family: "Prompt", sans-serif;
+      border: 1px solid #000000;
+      border-radius: .3rem;
+      padding: 1rem 2rem;
+      font-weight: bold;
+      cursor: pointer; }
+      main .about-me button:hover {
+        background-color: #000000;
+        color: #E7F991;
+        border: 1px solid #E7F991; }
