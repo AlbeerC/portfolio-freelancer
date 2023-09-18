@@ -1,0 +1,25 @@
+.contact-box {
+    display: grid;
+    place-content: center;
+    gap: 2rem;
+    margin: 2rem auto;
+    text-align: left;
+
+    .item {
+        display: flex;
+        align-items: center;
+        
+        p {
+            font-size: 1.8rem;
+            font-weight: bold;
+        }
+
+        i {
+            @include icon;
+            margin-right: 2rem;
+            font-size: 3rem;
+            min-width: 7rem;
+            text-align: center;
+        }
+    }
+}

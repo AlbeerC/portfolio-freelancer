@@ -24,17 +24,7 @@ main {
             gap: 2rem;
 
             i {
-                padding: 2rem;
-                border-radius: .5rem;
-                background-color: $yellow;
-                color: $black;
-                font-weight: bold;
-                cursor: pointer;
-
-                &:hover {
-                    background-color: $black;
-                    color: $yellow;
-                }
+                @include icon
             }
         }
 
@@ -44,7 +34,7 @@ main {
                 width: auto;
                 float: right;
                 margin-top: 5rem;
-                filter: brightness(80%);
+/*                 filter: brightness(80%); */
             }
         }
     }

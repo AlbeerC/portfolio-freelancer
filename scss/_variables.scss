@@ -26,3 +26,19 @@ $tablet: 768px;
         }
     }
 }
+
+//Mixin icon
+
+@mixin icon {
+    padding: 2rem;
+    border-radius: .5rem;
+    background-color: $yellow;
+    color: $black;
+    font-weight: bold;
+    cursor: pointer;
+
+    &:hover {
+        background-color: $black;
+        color: $yellow;
+    }
+}

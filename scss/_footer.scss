@@ -1,0 +1,16 @@
+footer {
+    background-color: $yellow;
+    color: $black;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 1rem;
+    align-items: center;
+    padding: 2rem;
+    margin-top: 5rem;
+
+    p {
+        font-weight: bold;
+        font-size: 1.7rem;
+    }
+}

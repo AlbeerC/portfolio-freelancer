@@ -22,6 +22,9 @@ h1, h2, h3 {
 p {
   font-family: "Atkinson Hyperlegible", sans-serif; }
 
+section {
+  margin-top: 5rem; }
+
 header {
   display: flex;
   justify-content: space-between;
@@ -64,7 +67,7 @@ main {
       width: auto;
       float: right;
       margin-top: 5rem;
-      filter: brightness(80%); }
+      /*                 filter: brightness(80%); */ }
   main .about-me {
     margin: 5rem 2rem 0 2rem;
     text-align: center; }
@@ -87,3 +90,144 @@ main {
         background-color: #000000;
         color: #E7F991;
         border: 1px solid #E7F991; }
+
+.services {
+  margin-left: 1rem;
+  margin-right: 1rem; }
+  .services h2 {
+    font-size: 3rem; }
+  .services .services-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    margin-top: 2rem; }
+    .services .services-list .service {
+      background-color: #ffffff;
+      color: #000000;
+      padding: 1.5rem 1rem;
+      border-bottom: 4px solid #E7F991;
+      max-width: 70%;
+      border-radius: .5rem;
+      -webkit-box-shadow: 18px 18px 9px -13px rgba(255, 255, 255, 0.35);
+      -moz-box-shadow: 18px 18px 9px -13px rgba(255, 255, 255, 0.35);
+      box-shadow: 18px 18px 9px -13px rgba(255, 255, 255, 0.35); }
+      .services .services-list .service:hover {
+        background-color: #E7F991; }
+        .services .services-list .service:hover i {
+          background-color: #ffffff; }
+      .services .services-list .service i {
+        background-color: #E7F991;
+        padding: 2rem;
+        color: #000000;
+        border-radius: .5rem; }
+      .services .services-list .service h3 {
+        padding: 0 0 1rem 0; }
+      .services .services-list .service p {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 1.5rem; }
+
+.slider {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  margin-top: 2rem; }
+  .slider .slider-container {
+    display: flex;
+    transition: transform 0.7s ease; }
+    .slider .slider-container .card {
+      flex: 0 0 100%;
+      text-align: center;
+      border: 1px solid #ddd;
+      margin: 0 auto;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+      .slider .slider-container .card img {
+        max-width: 50%;
+        height: 100%; }
+      .slider .slider-container .card .card-right {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 2rem;
+        margin: 0 .5rem;
+        padding: 1rem; }
+        .slider .slider-container .card .card-right p {
+          text-align: center; }
+        .slider .slider-container .card .card-right button {
+          background-color: #E7F991;
+          text-align: center;
+          padding: 1rem 2rem;
+          border-radius: 3px;
+          font-weight: bold;
+          border: 1px solid #ffffff; }
+          .slider .slider-container .card .card-right button i {
+            color: #000000; }
+          .slider .slider-container .card .card-right button:hover {
+            background-color: transparent;
+            border: 1px solid #E7F991;
+            color: #E7F991; }
+            .slider .slider-container .card .card-right button:hover i {
+              color: #E7F991; }
+  .slider button {
+    cursor: pointer; }
+  .slider .prev {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%); }
+    @media (max-width: 768px) {
+      .slider .prev {
+        display: none; } }
+  .slider .next {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%); }
+    @media (max-width: 768px) {
+      .slider .next {
+        display: none; } }
+
+.contact-box {
+  display: grid;
+  place-content: center;
+  gap: 2rem;
+  margin: 2rem auto;
+  text-align: left; }
+  .contact-box .item {
+    display: flex;
+    align-items: center; }
+    .contact-box .item p {
+      font-size: 1.8rem;
+      font-weight: bold; }
+    .contact-box .item i {
+      padding: 2rem;
+      border-radius: .5rem;
+      background-color: #E7F991;
+      color: #000000;
+      font-weight: bold;
+      cursor: pointer;
+      margin-right: 2rem;
+      font-size: 3rem;
+      min-width: 7rem;
+      text-align: center; }
+      .contact-box .item i:hover {
+        background-color: #000000;
+        color: #E7F991; }
+
+footer {
+  background-color: #E7F991;
+  color: #000000;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 1rem;
+  align-items: center;
+  padding: 2rem;
+  margin-top: 5rem; }
+  footer p {
+    font-weight: bold;
+    font-size: 1.7rem; }
