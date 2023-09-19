@@ -1,6 +1,7 @@
 .slider {
   overflow: hidden;
   position: relative;
+  z-index: 1;
   width: 100%;
   margin-top: 2rem;
 
@@ -63,6 +64,7 @@
 
   button {
     cursor: pointer;
+    display: none;
   }
   
   .prev {
@@ -85,5 +87,22 @@
     @include responsive (tablet) {
       display: none;
     }
+  }
+}
+
+
+.circles {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+  margin-top: 2rem;
+
+  i {
+    color: $white;
+  }
+
+  .filled {
+    color: $yellow;
   }
 }

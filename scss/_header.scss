@@ -15,8 +15,13 @@ header {
         left: 0;
         right: 0;
         bottom: 0;
+        z-index: 999;
         color: $black;
-        padding: 2rem;   
+        padding: 2rem;
+
+        a {
+            color: $black;
+        }
     }
 
     .nav-media {

@@ -46,10 +46,12 @@ sliderContainer.addEventListener("touchmove", (e) => {
   if (diffX > 50) {
     slideIndex++;
     showSlide();
+    updateIndicators();
     isDragging = false;
   } else if (diffX < -50) {
     slideIndex--;
     showSlide();
+    updateIndicators();
     isDragging = false;
   }
 });
@@ -71,3 +73,27 @@ function showSlide() {
 
 // Llama a showSlide para mostrar el primer proyecto al cargar la página
 showSlide();
+
+
+// Indicadores de diapositivas
+const circles = document.querySelectorAll(".circles i")
+
+circles.forEach((circle, index) => {
+  circle.addEventListener("click", () => {
+    slideIndex = index
+    showSlide()
+    updateIndicators()
+  })
+})
+
+const updateIndicators = () => {
+  circles.forEach((circle, index) => {
+    if (index === slideIndex) {
+      circle.classList.add("filled")
+    } else {
+      circle.classList.remove("filled")
+    }
+  })
+}
+
+updateIndicators()

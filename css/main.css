@@ -14,8 +14,7 @@ html {
 body {
   font-size: 16px;
   background-color: #000000;
-  color: #ffffff;
-  overflow-x: hidden; }
+  color: #ffffff; }
 
 h1, h2, h3 {
   font-weight: bold;
@@ -35,7 +34,7 @@ section {
   margin-top: 5rem; }
 
 section[id] {
-  scroll-margin-top: 10rem; }
+  scroll-margin-top: 8rem; }
 
 #hero {
   scroll-margin-top: 0; }
@@ -57,8 +56,11 @@ header {
       left: 0;
       right: 0;
       bottom: 0;
+      z-index: 999;
       color: #000000;
-      padding: 2rem; } }
+      padding: 2rem; }
+      header a {
+        color: #000000; } }
   @media (max-width: 992px) {
     header .nav-media {
       display: flex;
@@ -128,7 +130,7 @@ main {
           background-color: #000000;
           color: #E7F991; }
     main .hero .illustration img {
-      height: 25rem;
+      height: 22rem;
       width: auto;
       float: right;
       margin-top: 5rem; }
@@ -198,6 +200,7 @@ main {
 .slider {
   overflow: hidden;
   position: relative;
+  z-index: 1;
   width: 100%;
   margin-top: 2rem; }
   .slider .slider-container {
@@ -240,7 +243,8 @@ main {
             .slider .slider-container .card .card-right button:hover i {
               color: #E7F991; }
   .slider button {
-    cursor: pointer; }
+    cursor: pointer;
+    display: none; }
   .slider .prev {
     position: absolute;
     top: 50%;
@@ -257,6 +261,17 @@ main {
     @media (max-width: 768px) {
       .slider .next {
         display: none; } }
+
+.circles {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+  margin-top: 2rem; }
+  .circles i {
+    color: #ffffff; }
+  .circles .filled {
+    color: #E7F991; }
 
 .contact-box {
   display: grid;
