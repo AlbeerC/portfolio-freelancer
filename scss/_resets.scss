@@ -4,6 +4,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 html {
     font-size: 62.5%;
@@ -12,6 +13,7 @@ body {
     font-size: 16px;
     background-color: #000000;
     color: #ffffff;
+    overflow-x: hidden;
 }
 h1, h2, h3 {
     font-weight: bold;
@@ -20,6 +22,19 @@ h1, h2, h3 {
 p {
     font-family: $textFont;
 }
+ul {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    color: #ffffff;
+}
 section {
     margin-top: 5rem;
+}
+section[id] {
+    scroll-margin-top: 10rem;
+}
+#hero {
+    scroll-margin-top: 0;
 }

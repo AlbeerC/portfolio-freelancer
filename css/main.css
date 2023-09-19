@@ -5,7 +5,8 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  scroll-behavior: smooth; }
 
 html {
   font-size: 62.5%; }
@@ -13,7 +14,8 @@ html {
 body {
   font-size: 16px;
   background-color: #000000;
-  color: #ffffff; }
+  color: #ffffff;
+  overflow-x: hidden; }
 
 h1, h2, h3 {
   font-weight: bold;
@@ -22,17 +24,80 @@ h1, h2, h3 {
 p {
   font-family: "Atkinson Hyperlegible", sans-serif; }
 
+ul {
+  list-style: none; }
+
+a {
+  text-decoration: none;
+  color: #ffffff; }
+
 section {
   margin-top: 5rem; }
+
+section[id] {
+  scroll-margin-top: 10rem; }
+
+#hero {
+  scroll-margin-top: 0; }
 
 header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 2rem;
+  padding: 2rem 7rem;
   color: #ffffff; }
-  header h1 {
+  @media (max-width: 992px) {
+    header {
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+      background-color: #E7F991;
+      position: sticky;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      color: #000000;
+      padding: 2rem; } }
+  @media (max-width: 992px) {
+    header .nav-media {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      min-width: 100%; } }
+  header .nav-media h1 {
     font-size: 2.5rem; }
+  header .nav-media #btnToggle {
+    float: right;
+    display: none; }
+    @media (max-width: 992px) {
+      header .nav-media #btnToggle {
+        display: block; } }
+  header .section-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem; }
+    @media (max-width: 992px) {
+      header .section-list {
+        flex-direction: column;
+        margin-top: 3rem;
+        gap: 1rem;
+        justify-content: flex-start; } }
+    header .section-list li {
+      font-size: 2rem;
+      font-family: "Atkinson Hyperlegible", sans-serif;
+      cursor: pointer;
+      font-weight: bold; }
+      @media (max-width: 992px) {
+        header .section-list li a {
+          color: #000000; } }
+      header .section-list li:hover {
+        color: #E7F991; }
+
+@media (max-width: 992px) {
+  .d-none {
+    display: none !important; } }
 
 main {
   text-align: center;
@@ -66,8 +131,7 @@ main {
       height: 25rem;
       width: auto;
       float: right;
-      margin-top: 5rem;
-      /*                 filter: brightness(80%); */ }
+      margin-top: 5rem; }
   main .about-me {
     margin: 5rem 2rem 0 2rem;
     text-align: center; }
@@ -86,10 +150,13 @@ main {
       padding: 1rem 2rem;
       font-weight: bold;
       cursor: pointer; }
+      main .about-me button a {
+        color: #000000; }
       main .about-me button:hover {
         background-color: #000000;
-        color: #E7F991;
         border: 1px solid #E7F991; }
+        main .about-me button:hover a {
+          color: #E7F991; }
 
 .services {
   margin-left: 1rem;

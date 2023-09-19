@@ -1,9 +1,24 @@
-// Slider de proyectos
+//Menu
+const btnToggle = document.getElementById("btnToggle")
+const ul = document.querySelector(".section-list")
+const links = document.querySelectorAll(".section-list li")
 
-const slider = document.querySelector(".slider");
-const sliderContainer = document.querySelector(".slider-container");
-const prevButton = document.querySelector(".prev");
-const nextButton = document.querySelector(".next");
+btnToggle.addEventListener("click", () => {
+  ul.classList.toggle("d-none")
+})
+links.forEach((link) => {
+  link.addEventListener("click", () => {
+    ul.classList.add("d-none")
+  })
+})
+
+
+// Projects slider
+
+const slider = document.querySelector(".slider")
+const sliderContainer = document.querySelector(".slider-container")
+const prevButton = document.querySelector(".prev")
+const nextButton = document.querySelector(".next")
 
 let slideIndex = 0;
 let startX = 0;

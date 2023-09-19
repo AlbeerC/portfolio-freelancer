@@ -3,20 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Alberto Caminos</title>
+    <link rel="shortcut icon" href="img/undraw_programming_re_kg9v (1).svg" type="image/x-icon">
+    <title>Alberto Caminos | Freelance</title>
     <link rel="stylesheet" href="./css/main.css">
     <script src="https://kit.fontawesome.com/dfe7b9e9eb.js" crossorigin="anonymous"></script>
 </head>
 <body>
 
     <header>
-        <h1>Mi portfolio</h1>
-        <span>
-            <i class="fa-solid fa-bars fa-2xl"></i>
-        </span>
+        <div class="nav-media">
+            <h1>Mi portfolio</h1>
+            <span id="btnToggle">
+                <i class="fa-solid fa-bars fa-2xl"></i>
+            </span>
+        </div>
+        <ul class="section-list d-none">
+            <li><a href="#home">Inicio</a></li>
+            <li><a href="#services">Servicios</a></li>
+            <li><a href="#projects">Proyectos</a></li>
+            <li><a href="#contact">Contacto</a></li>
+        </ul>
     </header>
 
-    <main>
+    <main id="home">
             <h2>Alberto Caminos</h2>
             <h3>Front end developer</h3>
 
@@ -24,9 +33,9 @@
             <section class="hero">
 
                 <div class="social-icons">
-                    <i class="fa-brands fa-linkedin-in fa-xl"></i>
-                    <i class="fa-brands fa-github fa-xl"></i>
-                    <i class="fa-brands fa-instagram fa-xl"></i>
+                    <a href="https://www.linkedin.com/in/alberto-caminos-5b3961243/" target="blank"><i class="fa-brands fa-linkedin-in fa-xl"></i></a>
+                    <a href="https://github.com/AlbeerC" target="blank"><i class="fa-brands fa-github fa-xl"></i></a>
+                    <a href="https://www.instagram.com/albercaminos/" target="blank"><i class="fa-brands fa-instagram fa-xl"></i></a>
                 </div>
                 <div class="illustration">
                     <img src="./img/undraw_programming_re_kg9v (1).svg" alt="">
@@ -35,12 +44,12 @@
             </section>
 
             <div class="about-me">
-                <p>Estudio hace más de un año desarrollo web front end. Uso tecnologías como HTML, CSS, JavaScript, React JS, y también Figma para diseñar.</p>
-                <button>Ver proyectos</button>
+                <p>Soy Alberto, estudio hace más de un año desarrollo web front end usando tecnologías como HTML, CSS, JavaScript, React JS, y también Figma para diseñar.</p>
+                <button><a href="#projects">Ver proyectos</a></button>
             </div>
 
             <!--SERVICES-->
-            <section class="services">
+            <section class="services" id="services">
 
                 <h2>Mis servicios</h2>
                 <div class="services-list">
@@ -69,7 +78,7 @@
             </section>
 
             <!--PROJECTS-->
-            <section class="projects">
+            <section class="projects" id="projects">
 
                 <h2>Mis proyectos</h2>
                 <div class="slider">
@@ -114,23 +123,23 @@
             </section>
 
             <!--CONTACT-->
-            <section class="contact">
+            <section class="contact" id="contact">
                 <h2>Contactame</h2>
                 <div class="contact-box">
                     <div class="item">
-                        <i class="fa-solid fa-envelope fa-xl"></i>
+                        <a href="mailto:albeerc@gmail.com" target="blank"><i class="fa-solid fa-envelope fa-xl"></i></a>
                         <p>albeerc@gmail.com</p>
                     </div>
                     <div class="item">
-                        <i class="fa-brands fa-linkedin fa-xl"></i>
+                        <a href="https://www.linkedin.com/in/alberto-caminos-5b3961243/" target="blank"><i class="fa-brands fa-linkedin fa-xl"></i></a>
                         <p> /alberto-caminos</p>
                     </div>
                     <div class="item">
-                        <i class="fa-brands fa-github fa-xl"></i>
+                        <a href="https://github.com/AlbeerC" target="blank"><i class="fa-brands fa-github fa-xl"></i></a>
                         <p> /AlbeerC</p>
                     </div>
                     <div class="item">
-                        <i class="fa-brands fa-whatsapp fa-xl"></i>
+                        <a href="https://api.whatsapp.com/send?phone=2284697534" target="blank"><i class="fa-brands fa-whatsapp fa-xl"></i></a>
                         <p> 2284-697534</p>
                     </div>
                 </div>

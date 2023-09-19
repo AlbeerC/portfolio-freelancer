@@ -34,7 +34,6 @@ main {
                 width: auto;
                 float: right;
                 margin-top: 5rem;
-/*                 filter: brightness(80%); */
             }
         }
     }
@@ -61,10 +60,17 @@ main {
             font-weight: bold;
             cursor: pointer;
 
+            a {
+                color: $black;
+            }
+
             &:hover {
                 background-color: $black;
-                color: $yellow;
                 border: 1px solid $yellow;
+
+                a {
+                    color: $yellow;
+                }
             }
         }
     }
