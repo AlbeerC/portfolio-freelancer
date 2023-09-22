@@ -2,12 +2,23 @@ main {
     text-align: center;
     margin-top: 3rem;
 
+    @media (min-width: 992px) {
+        margin-top: 6rem;
+    }
+
+    .name {
+        @include animatedTitle;
+        color: $yellow;
+        font-size: 4rem;
+    }
+
     h2 {
         font-size: 3rem;
     }
 
     h3 {
         padding-top: 1rem;
+        font-size: 2.3rem;
     }
 
     .hero {
@@ -15,6 +26,10 @@ main {
         align-items: center;
         justify-content: space-between;
         margin: 0 1rem;
+
+        @media (min-width: 992px) {
+            margin: 2rem 7rem;
+        }
 
         .social-icons {
             display: flex;
@@ -34,6 +49,11 @@ main {
                 width: auto;
                 float: right;
                 margin-top: 5rem;
+
+                @media (min-width: 992px) {
+                    height: 35rem;
+                    margin-top: 0;
+                }
             }
         }
     }
@@ -46,6 +66,12 @@ main {
             line-height: 3rem;
             margin-bottom: 2rem;
             font-size: 1.7rem;
+
+            @media (min-width: 992px) {
+                max-width: 50vw;
+                margin: 1rem auto;
+                font-size: 2.5rem;
+            }
         }
 
         button {
@@ -59,6 +85,10 @@ main {
             padding: 1rem 2rem;
             font-weight: bold;
             cursor: pointer;
+
+            @media (min-width: 992px) {
+                font-size: 2rem;
+            }
 
             a {
                 color: $black;
@@ -75,4 +105,3 @@ main {
         }
     }
 }
-

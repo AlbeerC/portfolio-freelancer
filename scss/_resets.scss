@@ -13,6 +13,11 @@ body {
     font-size: 16px;
     background-color: #000000;
     color: #ffffff;
+    background-image: url(../img/blackbg.jfif);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
+    background-size: cover;
 }
 h1, h2, h3 {
     font-weight: bold;
@@ -30,9 +35,11 @@ a {
 }
 section {
     margin-top: 5rem;
+    margin-left: 7rem;
+    margin-right: 7rem;
 }
 section[id] {
-    scroll-margin-top: 8rem;
+    scroll-margin-top: 5rem;
 }
 #hero {
     scroll-margin-top: 0;

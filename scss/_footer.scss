@@ -3,11 +3,17 @@ footer {
     color: $black;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-between;
     gap: 1rem;
     align-items: center;
-    padding: 2rem;
+    padding: 2rem 7rem;
     margin-top: 5rem;
+
+    @include responsive(pc) {
+        padding: 2rem;
+        justify-content: center;
+        row-gap: 2rem;
+    }
 
     p {
         font-weight: bold;

@@ -17,10 +17,15 @@
       display: flex;
       justify-content: center;
       align-items: center;
+
+      @media (min-width: 992px) {
+        border: none;
+      }
   
       img {
         max-width: 50%;
         height: 100%;
+        min-height: 17rem;
       }
 
       .card-right {
@@ -32,8 +37,13 @@
         margin: 0 .5rem;
         padding: 1rem;
 
+        @media (min-width: 992px) {
+          gap: 7rem;
+        }
+
         p {
           text-align: center;
+          cursor: default;
         }
 
         button {
@@ -43,6 +53,12 @@
           border-radius: 3px;
           font-weight: bold;
           border: 1px solid $white;
+          cursor: pointer;
+
+          @media (min-width: 992px) {
+            padding: 1.5rem 3rem;
+            font-size: 2rem;
+          }
 
           i {
             color: $black;
@@ -62,9 +78,18 @@
     }
   }
 
-  button {
+  .prev, .next {
+    background-color: $yellow;
+    font-size: 4rem;
+    font-weight: bold;
+    border: none;
+    padding: .5rem;
+    border-radius: .5rem;
     cursor: pointer;
-    display: none;
+
+    @media (max-width: 992px) {
+      display: none;
+    }
   }
   
   .prev {
@@ -104,5 +129,12 @@
 
   .filled {
     color: $yellow;
+  }
+}
+
+.projects {
+  @include responsive(pc) {
+    margin-left: 1rem;
+    margin-right: 1rem;
   }
 }

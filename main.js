@@ -27,11 +27,13 @@ let isDragging = false;
 prevButton.addEventListener("click", () => {
   slideIndex--;
   showSlide();
+  updateIndicators();
 });
 
 nextButton.addEventListener("click", () => {
   slideIndex++;
   showSlide();
+  updateIndicators();
 });
 
 sliderContainer.addEventListener("touchstart", (e) => {
@@ -97,3 +99,19 @@ const updateIndicators = () => {
 }
 
 updateIndicators()
+
+
+// Texto animado en sección contacto
+
+document.addEventListener("DOMContentLoaded", function () {
+  const textElement = document.getElementById("text");
+  const words = ["LinkedIn", "GitHub", "Whatsapp"];
+  let currentWordIndex = 0;
+
+  function changeWord() {
+      textElement.textContent = `${words[currentWordIndex]}`;
+      currentWordIndex = (currentWordIndex + 1) % words.length;
+  }
+
+  setInterval(changeWord, 3000);
+});
