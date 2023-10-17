@@ -36,7 +36,7 @@ a {
   color: #ffffff; }
 
 section {
-  margin-top: 5rem;
+  margin-top: 12rem;
   margin-left: 7rem;
   margin-right: 7rem; }
 
@@ -302,28 +302,39 @@ main {
         @media (min-width: 992px) {
           .slider .slider-container .card .card-right {
             gap: 7rem; } }
+        @media (max-width: 768px) {
+          .slider .slider-container .card .card-right h3 {
+            font-size: 1.8rem; } }
         .slider .slider-container .card .card-right p {
           text-align: center;
-          cursor: default; }
-        .slider .slider-container .card .card-right button {
+          font-size: 1.8rem;
+          cursor: default;
+          max-width: 40rem; }
+          @media (max-width: 768px) {
+            .slider .slider-container .card .card-right p {
+              font-size: 1.4rem; } }
+          .slider .slider-container .card .card-right p span {
+            display: none; }
+        .slider .slider-container .card .card-right a {
           background-color: #E7F991;
           text-align: center;
           padding: 1rem 2rem;
           border-radius: 3px;
           font-weight: bold;
           border: 1px solid #ffffff;
-          cursor: pointer; }
+          cursor: pointer;
+          color: #000000; }
           @media (min-width: 992px) {
-            .slider .slider-container .card .card-right button {
+            .slider .slider-container .card .card-right a {
               padding: 1.5rem 3rem;
-              font-size: 2rem; } }
-          .slider .slider-container .card .card-right button i {
+              font-size: 2.5rem; } }
+          .slider .slider-container .card .card-right a i {
             color: #000000; }
-          .slider .slider-container .card .card-right button:hover {
+          .slider .slider-container .card .card-right a:hover {
             background-color: transparent;
             border: 1px solid #E7F991;
             color: #E7F991; }
-            .slider .slider-container .card .card-right button:hover i {
+            .slider .slider-container .card .card-right a:hover i {
               color: #E7F991; }
   .slider .prev, .slider .next {
     background-color: #E7F991;

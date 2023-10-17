@@ -41,12 +41,28 @@
           gap: 7rem;
         }
 
-        p {
-          text-align: center;
-          cursor: default;
+        h3 {
+          @include responsive(tablet) {
+            font-size: 1.8rem;
+          }
         }
 
-        button {
+        p {
+          text-align: center;
+          font-size: 1.8rem;
+          cursor: default;
+          max-width: 40rem;
+
+          @include responsive(tablet) {
+            font-size: 1.4rem;
+          }
+
+          span {
+            display: none;
+          }
+        }
+
+        a {
           background-color: $yellow;
           text-align: center;
           padding: 1rem 2rem;
@@ -54,10 +70,11 @@
           font-weight: bold;
           border: 1px solid $white;
           cursor: pointer;
+          color: $black;
 
           @media (min-width: 992px) {
             padding: 1.5rem 3rem;
-            font-size: 2rem;
+            font-size: 2.5rem;
           }
 
           i {
