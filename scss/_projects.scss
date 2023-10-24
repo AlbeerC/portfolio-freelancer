@@ -58,7 +58,9 @@
           }
 
           span {
-            display: none;
+            @include responsive(tablet) {
+              display: none;
+            }
           }
         }
 
