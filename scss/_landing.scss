@@ -10,6 +10,10 @@ main {
         @include animatedTitle;
         color: $yellow;
         font-size: 4rem;
+
+        @media (max-width: 768px) {
+            font-size: 3.2rem;
+        }
     }
 
     h2 {
@@ -44,11 +48,14 @@ main {
         }
 
         .illustration {
+
             img {
                 height: 22rem;
                 width: auto;
                 float: right;
                 margin-top: 5rem;
+                transition: all ease 1s;
+                animation: float 5s ease-in-out infinite;
 
                 @media (min-width: 992px) {
                     height: 35rem;
@@ -63,12 +70,12 @@ main {
         text-align: center;
 
         p {
-            line-height: 3rem;
+            line-height: 3.5rem;
             margin-bottom: 2rem;
             font-size: 1.7rem;
 
             @media (min-width: 992px) {
-                max-width: 50vw;
+                max-width: 60vw;
                 margin: 1rem auto;
                 font-size: 2.5rem;
             }
@@ -105,3 +112,16 @@ main {
         }
     }
 }
+
+
+@keyframes float {
+    0% {
+      transform: translatey(0px); 
+      }
+    50% {
+      transform: translatey(-20px); 
+      }
+    100% {
+      transform: translatey(0px); 
+      }
+  }
